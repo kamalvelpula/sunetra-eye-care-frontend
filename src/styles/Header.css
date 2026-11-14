@@ -1,0 +1,386 @@
+
+/* =====================================
+   HEADER MAIN
+===================================== */
+
+.main-header {
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+  background: #ffffff;
+}
+
+/* =====================================
+   TOP CONTACT BAR
+===================================== */
+
+.top-contact-bar {
+  min-height: 38px;
+  background: linear-gradient(90deg, #075b9c, #086a89);
+  color: #ffffff;
+}
+
+.header-container {
+  width: min(1450px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+.top-contact-inner {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-left {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.contact-left a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.contact-left a:hover {
+  color: #baf6ef;
+}
+
+.contact-left svg {
+  flex-shrink: 0;
+  fill: #ffffff;
+}
+
+.top-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  transition: 0.25s ease;
+}
+
+.social-links a:hover {
+  color: #a9f1e8;
+  transform: translateY(-2px);
+}
+
+/* =====================================
+   MAIN NAVIGATION
+===================================== */
+
+.navigation-bar {
+  background: #ffffff;
+  border-bottom: 1px solid #e8f0f5;
+  box-shadow: 0 3px 12px rgba(8, 62, 112, 0.05);
+}
+
+.navigation-inner {
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+/* =====================================
+   BRAND LOGO
+===================================== */
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.brand-eye {
+  width: 70px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.brand-eye svg {
+  display: block;
+  width: 65px;
+  height: 48px;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+  font-family: "Poppins", sans-serif;
+}
+
+.brand-name strong {
+  font-size: 25px;
+  font-weight: 800;
+  color: #08376e;
+  letter-spacing: -1px;
+}
+
+.brand-name span {
+  margin-top: 3px;
+  color: #078f86;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+/* =====================================
+   NAVIGATION MENU
+===================================== */
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+.navigation-link {
+  min-height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 8px;
+  color: #102f52;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: 0.25s ease;
+}
+
+.navigation-link:hover {
+  color: #079b91;
+}
+
+.navigation-link.active {
+  padding: 0 24px;
+  border-radius: 30px;
+  background: #079b91;
+  color: #ffffff;
+}
+
+.navigation-chevron {
+  transition: transform 0.25s ease;
+}
+
+.navigation-link:hover .navigation-chevron {
+  transform: translateY(3px);
+}
+
+/* =====================================
+   APPOINTMENT BUTTON
+===================================== */
+
+.header-appointment {
+  min-height: 47px;
+  padding: 0 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  background: #079b91;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.header-appointment:hover {
+  background: #075b91;
+  box-shadow: 0 6px 16px rgba(7, 91, 145, 0.2);
+  transform: translateY(-2px);
+}
+
+/* =====================================
+   MOBILE MENU BUTTON
+===================================== */
+
+.mobile-menu-button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border: 0;
+  background: #eaf7f6;
+  color: #087f80;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/* =====================================
+   RESPONSIVE - TABLET
+===================================== */
+
+@media (max-width: 1200px) {
+  .navigation-menu {
+    gap: 12px;
+  }
+
+  .brand-eye {
+    width: 60px;
+  }
+
+  .brand-eye svg {
+    width: 56px;
+  }
+
+  .brand-name strong {
+    font-size: 21px;
+  }
+
+  .brand-name span {
+    font-size: 16px;
+  }
+
+  .navigation-link {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+
+  .header-appointment {
+    padding: 0 15px;
+    font-size: 12px;
+  }
+}
+
+/* =====================================
+   RESPONSIVE - MOBILE MENU
+===================================== */
+
+@media (max-width: 950px) {
+  .header-container {
+    width: calc(100% - 40px);
+  }
+
+  .navigation-inner {
+    min-height: 75px;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+  }
+
+  .navigation-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    border-top: 1px solid #e6eff3;
+    box-shadow: 0 12px 20px rgba(8, 62, 112, 0.12);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .navigation-menu.menu-open {
+    display: flex;
+  }
+
+  .navigation-link {
+    min-height: 43px;
+    justify-content: flex-start;
+    padding: 0 15px;
+  }
+
+  .navigation-link.active {
+    justify-content: flex-start;
+  }
+
+  .header-appointment {
+    margin-top: 8px;
+    width: 100%;
+  }
+}
+
+/* =====================================
+   RESPONSIVE - SMALL MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+  .top-contact-inner {
+    justify-content: center;
+    padding: 9px 0;
+  }
+
+  .top-contact-bar {
+    min-height: auto;
+  }
+
+  .contact-left {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 15px;
+  }
+
+  .contact-left a {
+    font-size: 11px;
+  }
+
+  .contact-left a:last-child {
+    display: none;
+  }
+
+  .top-divider {
+    height: 15px;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .header-container {
+    width: calc(100% - 28px);
+  }
+
+  .navigation-inner {
+    min-height: 70px;
+  }
+
+  .brand-eye {
+    width: 52px;
+    height: 45px;
+  }
+
+  .brand-eye svg {
+    width: 49px;
+    height: 40px;
+  }
+
+  .brand-name strong {
+    font-size: 19px;
+  }
+
+  .brand-name span {
+    font-size: 15px;
+  }
+}

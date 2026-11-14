@@ -1,0 +1,193 @@
+
+/* =========================================
+   SUNETRA EYE CARE - ADMIN LOGIN
+   Forest Green | Gold | White
+========================================= */
+
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(205, 177, 112, 0.12), transparent 35%),
+    #f7f8f5;
+  font-family: inherit;
+}
+
+.admin-login-container {
+  width: 100%;
+  max-width: 440px;
+}
+
+.admin-login-brand {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-login-logo {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  color: #d5b46a;
+  background: #173e32;
+  box-shadow: 0 12px 30px rgba(23, 62, 50, 0.16);
+}
+
+.admin-login-brand > span {
+  display: block;
+  color: #a98743;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.admin-login-brand h1 {
+  margin: 12px 0 8px;
+  color: #173e32;
+  font-size: clamp(28px, 5vw, 34px);
+  font-weight: 700;
+}
+
+.admin-login-brand p {
+  margin: 0;
+  color: #777e79;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.admin-login-card {
+  padding: 38px;
+  background: #ffffff;
+  border: 1px solid #e9ece7;
+  border-radius: 22px;
+  box-shadow: 0 18px 55px rgba(23, 62, 50, 0.09);
+}
+
+.admin-login-field {
+  margin-bottom: 23px;
+}
+
+.admin-login-field label {
+  display: block;
+  margin-bottom: 10px;
+  color: #173e32;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-login-input {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 15px;
+  border: 1px solid #e1e6e1;
+  border-radius: 11px;
+  background: #ffffff;
+  color: #8a928d;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.admin-login-input:focus-within {
+  border-color: #b18c42;
+  box-shadow: 0 0 0 3px rgba(177, 140, 66, 0.1);
+}
+
+.admin-login-input input {
+  width: 100%;
+  min-width: 0;
+  height: 52px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #263c33;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.admin-login-input input::placeholder {
+  color: #a5aaa6;
+}
+
+.admin-login-password-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  color: #858d87;
+  cursor: pointer;
+}
+
+.admin-login-password-toggle:hover {
+  color: #173e32;
+}
+
+.admin-login-error {
+  margin: 0 0 20px;
+  padding: 12px 14px;
+  border: 1px solid #f5d1d1;
+  border-radius: 9px;
+  background: #fff3f3;
+  color: #c03939;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.admin-login-submit {
+  width: 100%;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 11px;
+  background: #173e32;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.admin-login-submit:hover:not(:disabled) {
+  background: #245b49;
+  transform: translateY(-2px);
+}
+
+.admin-login-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.admin-login-security-note {
+  margin: 25px 0 0;
+  color: #929993;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .admin-login-page {
+    padding: 35px 16px;
+  }
+
+  .admin-login-card {
+    padding: 27px 21px;
+  }
+
+  .admin-login-brand h1 {
+    font-size: 28px;
+  }
+}
