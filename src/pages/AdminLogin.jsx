@@ -47,7 +47,7 @@ export default function AdminLogin() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/admin/login",
+        "http://https://sunetra-eye-care-backend.onrender.com/api/admin/login",
         {
           method: "POST",
           headers: {

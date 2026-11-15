@@ -28,10 +28,10 @@ import {
 
 import "../styles/AdminDashboard.css";
 
-const APPOINTMENTS_API = "http://localhost:8080/api/appointments";
-const CONTACT_API = "http://localhost:8080/api/contact";
-const SERVICES_API = "http://localhost:8080/api/services";
-const GALLERY_API = "http://localhost:8080/api/gallery";
+const APPOINTMENTS_API = "http://https://sunetra-eye-care-backend.onrender.com/api/appointments";
+const CONTACT_API = "http://https://sunetra-eye-care-backend.onrender.com/api/contact";
+const SERVICES_API = "http://https://sunetra-eye-care-backend.onrender.com/api/services";
+const GALLERY_API = "http://https://sunetra-eye-care-backend.onrender.com/api/gallery";
 
 export default function AdminDashboard() {
   const navigate = useNavigate();

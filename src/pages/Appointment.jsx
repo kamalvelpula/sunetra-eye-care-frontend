@@ -17,8 +17,8 @@ import {
 
 import "../styles/Appointment.css";
 
-const API_URL = "http://localhost:8080/api/appointments";
-const SERVICES_API = "http://localhost:8080/api/services";
+const API_URL = "http://https://sunetra-eye-care-backend.onrender.com/api/appointments";
+const SERVICES_API = "http://https://sunetra-eye-care-backend.onrender.com/api/services";
 
 const initialFormData = {
   name: "",

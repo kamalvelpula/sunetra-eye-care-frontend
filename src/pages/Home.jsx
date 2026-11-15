@@ -22,7 +22,7 @@ import {
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
 
-const SERVICES_API = "http://localhost:8080/api/services";
+const SERVICES_API = "http://https://sunetra-eye-care-backend.onrender.com/api/services";
 
 const getServiceIcon = (serviceName = "") => {
   const name = serviceName.toLowerCase();

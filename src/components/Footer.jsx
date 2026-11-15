@@ -66,7 +66,7 @@ export default function Footer() {
 
           <a href="tel:+918105427908">
             <Phone />
-            +91 99663 78413
+            +91 8105427908
           </a>
 
           <a href="mailto:info@sunetraeyecare.in">
