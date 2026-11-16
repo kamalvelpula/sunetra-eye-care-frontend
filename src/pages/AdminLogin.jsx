@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -47,7 +46,7 @@ export default function AdminLogin() {
 
     try {
       const response = await fetch(
-        "http://https://sunetra-eye-care-backend.onrender.com/api/admin/login",
+        "https://sunetra-eye-care-backend.onrender.com/api/admin/login",
         {
           method: "POST",
           headers: {
@@ -94,7 +93,6 @@ export default function AdminLogin() {
   return (
     <main className="admin-login-page">
       <div className="admin-login-container">
-
         <div className="admin-login-brand">
           <div className="admin-login-logo">
             <LockKeyhole size={32} />
@@ -111,7 +109,6 @@ export default function AdminLogin() {
 
         <div className="admin-login-card">
           <form onSubmit={handleSubmit}>
-
             <div className="admin-login-field">
               <label htmlFor="admin-username">
                 Username
@@ -186,14 +183,12 @@ export default function AdminLogin() {
 
               {!loading && <ArrowRight size={19} />}
             </button>
-
           </form>
 
           <p className="admin-login-security-note">
             Authorized personnel only. Your login is protected.
           </p>
         </div>
-
       </div>
     </main>
   );
