@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "../styles/Services.css";
 
-const SERVICES_API = "http://https://sunetra-eye-care-backend.onrender.com/api/services";
+const SERVICES_API = "https://sunetra-eye-care-backend.onrender.com/api/services";
 
 const benefits = [
   {

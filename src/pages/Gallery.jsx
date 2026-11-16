@@ -11,7 +11,7 @@ import {
 
 import "../styles/Gallery.css";
 
-const GALLERY_API = "http://https://sunetra-eye-care-backend.onrender.com/api/gallery";
+const GALLERY_API = "https://sunetra-eye-care-backend.onrender.com/api/gallery";
 
 export default function Gallery() {
   const [galleryImages, setGalleryImages] = useState([]);
